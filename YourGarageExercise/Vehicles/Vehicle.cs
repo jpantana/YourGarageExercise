@@ -2,16 +2,23 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace YourGarageExercise.Cars
+namespace YourGarageExercise.Vehicles
 {
-    // Include properties for fuel/battery capacity, color, and passenger occupancy
-    class Car
+    abstract class Vehicle
     {
         public FuelStatus FuelAtPresent { get; set; }
+        public int PassengerCap { get; }
         public string Color { get; set; }
         public int PassengerCapacity { get; set; }
+
+        // Methods section
+        public abstract void Refuel();
+
+        public abstract void Drive();
+
+        public abstract void Brake();
     }
-    enum FuelStatus
+    public enum FuelStatus
     {
         Full,
         Half_A_Tank,

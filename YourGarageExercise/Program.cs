@@ -1,4 +1,6 @@
 ﻿using System;
+using YourGarageExercise.Vehicles;
+using YourGarageExercise.Vehicles.Cars;
 
 namespace YourGarageExercise
 {
@@ -6,7 +8,9 @@ namespace YourGarageExercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var newSportsCar = new SportsCar(FuelStatus.Empty, "Blue", 4);
+
+            newSportsCar.Drive();
         }
     }
 }

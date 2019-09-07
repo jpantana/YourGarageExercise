@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
-namespace YourGarageExercise.Watercrafts
+namespace YourGarageExercise.Vehicles
 {
-    class CruiseLiner : Watercraft
+    class Aircraft : Vehicle
     {
-        public override void Drive()
+        public override void Brake()
         {
 
         }
 
-        public override void Brake()
+        public override void Drive()
         {
 
         }
